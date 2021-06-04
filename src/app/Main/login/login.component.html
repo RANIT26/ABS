@@ -1,5 +1,39 @@
-<h1>Welcome to Albertsons Retail App</h1>
+<!-- <h1>Welcome to Albertsons Retail App</h1> -->
 
-<button routerLink="/home">Login</button>
+<!-- <button routerLink="/home">Login</button> -->
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Store Inventory App Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="container">
+    <div class="center-item">
+        <mat-grid-list cols="1" gutterSize="0px" rowHeight="65px">
+            <mat-grid-tile class="pd-top">
+                <mat-form-field>
+                    <mat-label for="username">Username</mat-label>
+                    <input matInput type="text" name="username">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <mat-label for="password">Password</mat-label>
+                    <input matInput type="password">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-raised-button color="primary">Submit</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</body>
+
+</html>
+<app-footer></app-footer>

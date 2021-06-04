@@ -14,6 +14,9 @@ import { HomepageComponent } from './Main/homepage/homepage.component';
 // Services
 import { GlobalServicesService } from './services/global-services.service';
 
+//Angular material imports
+import { AngularMaterialModule } from './angular-material/angular-material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,8 @@ import { GlobalServicesService } from './services/global-services.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularMaterialModule
   ],
   providers: [GlobalServicesService],
   bootstrap: [AppComponent]
