@@ -15,7 +15,7 @@
 
 <body class="container">
     <div class="center-item">
-        <mat-grid-list cols="1" gutterSize="0px" rowHeight="65px">
+        <mat-grid-list cols="1" gutterSize="0px" rowHeight="65px" class="center-list">
             <mat-grid-tile class="pd-top">
                 <mat-form-field>
                     <mat-label for="username">Username</mat-label>
@@ -29,11 +29,10 @@
                 </mat-form-field>
             </mat-grid-tile>
             <mat-grid-tile>
-                <button mat-raised-button color="primary">Submit</button>
+                <button mat-raised-button color="primary" routerLink="/home">Submit</button>
             </mat-grid-tile>
         </mat-grid-list>
     </div>
 </body>
-
 </html>
 <app-footer></app-footer>

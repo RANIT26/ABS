@@ -1,4 +1,12 @@
 /* @import "./../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"; */
 
-html, body { height: 95%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html { 
+    height: 100%;
+    overflow-y: hidden;
+ }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: #eaedf3;
+    min-height: 100vh;
+}

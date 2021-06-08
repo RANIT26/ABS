@@ -1,26 +1,22 @@
 .container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .center-item {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-list {
     width: 300px;
     border: 1px solid black;
-}
-mat-grid-tile {
-    background-color: lightblue;
-}
-.grid-tile-content { 
-    justify-content: flex-start;
-    width: -webkit-fill-available;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-.btn {
-    width: fit-content;
-    margin-top: 5px;
+    background: white;
 }
 .pd-top {
     padding-top: 30px;
 }
+/* mat-grid-tile {
+    background-color: lightblue;
+} */
+
