@@ -1,0 +1,12 @@
+::ng-deep .mat-tab-header {
+    background: rgb(103,58,183);
+}
+.margin-top {
+    margin-top: 40px;
+}
+::ng-deep .mat-tab-label .mat-tab-label-content {
+    color: white;
+}
+/* ::ng-deep .mat-tab-label-container .mat-tab-label {
+opacity: 1;
+} */

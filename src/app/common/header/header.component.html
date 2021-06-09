@@ -1,1 +1,29 @@
-<p>header works!</p>
+<div class="display-inline-flex elevation bg-clr header-fixed">
+    <div class="box1-width">
+        <mat-toolbar class="bg-clr height-inherit">
+            <span>Store Inventory App Login</span>
+        </mat-toolbar>
+    </div>
+    <div class="box2-width">
+        <div>
+            <mat-form-field appearance="fill" class="pd-btm bg-clr">
+                <mat-label class="select-clr">Select Store</mat-label>
+                <mat-select class="select-clr">
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="pd-btm">
+                <mat-label class="select-clr">Select Division</mat-label>
+                <mat-select class="select-clr">
+                    <mat-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+</div>
