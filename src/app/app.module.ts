@@ -17,6 +17,7 @@ import { GlobalServicesService } from './services/global-services.service';
 //Angular material imports
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { ContentLandingPageComponent } from './Main/content-landing-page/content-landing-page.component';
+import { InputFormContentComponent } from './Main/input-form-content/input-form-content.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContentLandingPageComponent } from './Main/content-landing-page/content
     HomepageComponent,
     HeaderComponent,
     FooterComponent,
-    ContentLandingPageComponent
+    ContentLandingPageComponent,
+    InputFormContentComponent
   ],
   imports: [
     BrowserModule,

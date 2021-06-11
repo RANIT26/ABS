@@ -8,8 +8,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatSelectModule} from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
-
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 const materialConst = [
   MatGridListModule,
@@ -20,7 +21,10 @@ const materialConst = [
   MatTabsModule,
   MatSelectModule,
   MatMenuModule,
-  MatTableModule
+  MatTableModule,
+  MatAutocompleteModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];
 
 @NgModule({
