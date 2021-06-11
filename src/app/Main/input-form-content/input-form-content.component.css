@@ -1,0 +1,35 @@
+.bg-clr {
+    background-color: #eaedf3;
+
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .form-header{
+    color: black; 
+    background-color: #eaedf3; 
+    font-size: medium; 
+    font-weight: bold; 
+    margin-left: 20%;
+  }
+
+  .table-form{
+    
+    margin-top: 10px;
+    width: 300%; 
+    padding-left: 10px;
+  }
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  margin-left: 90%;
+}
