@@ -1,7 +1,7 @@
 <app-header></app-header>
 <html>
     <body> 
-        <mat-tab-group class="margin-top">
+        <mat-tab-group class="margin-top" (selectedTabChange)="tabChangeEvent($event)">
             <mat-tab label="First" class="tab-label-css">
               <ng-template matTabContent>
                 <!-- <app-content-landing-page></app-content-landing-page> -->

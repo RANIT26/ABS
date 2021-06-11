@@ -9,8 +9,8 @@
             <mat-form-field appearance="fill" class="pd-btm bg-clr">
                 <mat-label class="select-clr">Select Store</mat-label>
                 <mat-select class="select-clr">
-                    <mat-option *ngFor="let food of foods" [value]="food.value">
-                        {{food.viewValue}}
+                    <mat-option *ngFor="let company of obj1" [value]="company.value">
+                        {{company.companyName}}
                     </mat-option>
                 </mat-select>
             </mat-form-field>
@@ -19,8 +19,8 @@
             <mat-form-field appearance="fill" class="pd-btm">
                 <mat-label class="select-clr">Select Division</mat-label>
                 <mat-select class="select-clr">
-                    <mat-option *ngFor="let food of foods" [value]="food.value">
-                        {{food.viewValue}}
+                    <mat-option *ngFor="let divison of obj1" [value]="divison.value">
+                        {{divison.viewValue}}
                     </mat-option>
                 </mat-select>
             </mat-form-field>

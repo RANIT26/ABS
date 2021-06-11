@@ -1,0 +1,25 @@
+[
+    {
+      "value": 101,
+      "companyName": "Best Price",
+      "viewValue": [
+        {
+          "bestPrice": [
+            {
+              "oils": "Fortune",
+              "food": "Haldiram"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": 102,
+      "companyName": "D-Mart",
+      "viewValue": [{
+        "dMart": [{
+          "cutlery": "Borosil"
+        }]
+      }]
+    }
+  ]
