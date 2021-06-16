@@ -8,16 +8,9 @@ export interface PeriodicElement {
 export interface Company {
   value: number;
   companyName: string;
-  viewValue: Divison[];
+  division: Divison[];
 }
 interface Divison {
-  bestPrice?: BestPrice[];
-  dMart?: DMart[];
-}
-interface BestPrice {
-  oils: string;
-  food: string;
-}
-interface DMart {
-  cutlery: string;
+  divisionId: number;
+  divisionName: string;
 }

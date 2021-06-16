@@ -1,4 +1,9 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ViewEncapsulation,
+  SimpleChanges,
+} from '@angular/core';
 import { Company } from '../data-typing';
 
 @Component({
@@ -8,43 +13,57 @@ import { Company } from '../data-typing';
   encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent implements OnInit {
-  // company: Company[] = [];
+  divisionObj: Array<any> = [];
+  companySelect: any = '';
+  divisionSelect: any = '';
+
   constructor() {}
 
   obj1: Company[] = [
     {
       value: 101,
       companyName: 'Best Price',
-      viewValue: [
+      division: [
         {
-          bestPrice: [
-            {
-              oils: 'Fortune',
-              food: 'Haldiram',
-            },
-          ],
-        },
+          divisionName: 'Oil',
+          divisionId: 10101
+        }, 
+        {
+          divisionName: 'Packed Food',
+          divisionId: 10102
+        }
       ],
     },
     {
       value: 102,
       companyName: 'D-Mart',
-      viewValue: [{
-        dMart: [{
-          cutlery: 'Borosil'
-        }]
-      }]
-    }
+      division: [
+        {
+          divisionName: 'Cutlery',
+          divisionId: 10201
+        },
+      ],
+    },
   ];
-  
+
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(this.companySelect);
+    console.log(changes);
+    console.log(this.divisionSelect);
+    // NOT WORKING
+  }
+
   ngOnInit() {
     console.log(this.obj1);
-    let y= this.obj1.forEach(x => {
-      console.log(x.value);
-    });
-    
   }
-  // {value: 102, viewValue: 'D-Mart'},
-  //   {value: 103, viewValue: 'Reliance Fresh'},
-  //   {value: 105, viewValue: 'Walmart'},
+
+  selectCompany(value: any) {
+    console.log(value);
+    this.obj1.filter(x => {
+      if(x.value==value) {
+        this.divisionObj= x.division;
+      }
+    });
+  }
+  
 }
