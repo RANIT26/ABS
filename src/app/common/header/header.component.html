@@ -18,7 +18,7 @@
         <div>
             <mat-form-field appearance="fill" class="pd-btm">
                 <mat-label class="select-clr">Select Division</mat-label>
-                <mat-select class="select-clr" [(value)]="divisionSelect">
+                <mat-select class="select-clr" [(value)]="divisionSelect" (selectionChange)="selectDivison(divisionSelect)">
                     <mat-option *ngFor="let divison of divisionObj" [value]="divison.divisionId">
                         {{divison.divisionName}}
                     </mat-option>

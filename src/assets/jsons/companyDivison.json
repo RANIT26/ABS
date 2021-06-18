@@ -1,25 +1,26 @@
 [
-    {
-      "value": 101,
-      "companyName": "Best Price",
-      "viewValue": [
-        {
-          "bestPrice": [
-            {
-              "oils": "Fortune",
-              "food": "Haldiram"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "value": 102,
-      "companyName": "D-Mart",
-      "viewValue": [{
-        "dMart": [{
-          "cutlery": "Borosil"
-        }]
-      }]
-    }
-  ]
+  {
+    "value": 101,
+    "companyName": "Best Price",
+    "division": [
+      {
+        "divisionName": "Oil",
+        "divisionId": 10101
+      },
+      {
+        "divisionName": "Packed Food",
+        "divisionId": 10102
+      }
+    ]
+  },
+  {
+    "value": 102,
+    "companyName": "D-Mart",
+    "division": [
+      {
+        "divisionName": "Cutlery",
+        "divisionId": 10201
+      }
+    ]
+  }
+]
